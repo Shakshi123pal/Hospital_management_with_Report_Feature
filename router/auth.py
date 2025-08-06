@@ -13,7 +13,7 @@ from starlette import status
 import model
 from database import engine, SessionLocal
 
-SECRET_KEY = "KlgH6AzYDeZeGwD288to79I3vTHT8wp7"
+SECRET_KEY = "ya7zVjYbq8Ykk-mnYqn1C9m50BLWn_WmKqq52glDo3s"
 ALGORITHM = "HS256"
 
 oauth2_bearer = OAuth2PasswordBearer(tokenUrl="/admin/token")
@@ -26,14 +26,14 @@ router = APIRouter(
 )
 
 
-class ui_admin(BaseModel):
+class  AdminCredentials(BaseModel):
     username: str = Field(default=None)
     password: str = Field(default=None)
 
     class Config: {
         "user_demo": {
-            "username": "Divyansh123",
-            "password": "123"
+            "username": "Shakshi124",
+            "password": "124"
         }
     }
 
@@ -67,12 +67,12 @@ def authenticate_admin(admin_username: str, password: str, db):
         return False
     return admin
 
-
+# Get user from token
 async def get_current_user(token: str = Depends(oauth2_bearer)):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         username: str = payload.get("sub")
-        if username is None or id is None:
+        if username is None:
             raise get_user_exception()
         return {"username": username}
     except JWTError:
@@ -89,9 +89,9 @@ def create_access_token(username: str,
     encode.update({"exp": expire})
     return jwt.encode(encode, SECRET_KEY, algorithm=ALGORITHM)
 
-
+# Add new admin
 @router.post("/add", tags=["admin"])
-async def create_newadmin(newadmin: ui_admin, db: Session = Depends(get_db)):
+async def create_newadmin(newadmin:  authenticate_admin, db: Session = Depends(get_db)):
     admin_value = model.Admin()
 
     admin_value.username = newadmin.username
