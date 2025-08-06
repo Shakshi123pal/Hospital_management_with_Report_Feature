@@ -91,7 +91,7 @@ def create_access_token(username: str,
 
 # Add new admin
 @router.post("/add", tags=["admin"])
-async def create_newadmin(newadmin:  authenticate_admin, db: Session = Depends(get_db)):
+async def create_newadmin(newadmin:  AdminCredentials, db: Session = Depends(get_db)):
     admin_value = model.Admin()
 
     admin_value.username = newadmin.username
