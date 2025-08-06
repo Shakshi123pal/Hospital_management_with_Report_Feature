@@ -45,8 +45,9 @@ uvicorn main:app --reload
 💼 Author
 Shakshi Pal
 MSc Data Science | Aspiring Data Scientist
-📫 Connect on LinkedIn
-🌐 GitHub Profile
+📫 Connect with me: linkedin.com/in/shakshi-pal-17307926b  
+🌐 GitHub: https://github.com/Shakshi123pal
+
 
 📌 Note
 This project is backend-only. You can integrate it with a frontend using React, Vue, or any mobile app framework.
