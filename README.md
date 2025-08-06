@@ -1,45 +1,33 @@
-# 🏥 Hospital Management Backend App with FastAPI
+# 🏥 Hospital Management System with Report Feature
 
-This is a backend-only Hospital Management System built using **FastAPI**, **SQLite3**, and **OAuth 2.0**. The application allows admin-authenticated operations for managing doctors and patients with a many-to-many relationship.
+This is a FastAPI-based backend for a hospital management system with features like patient CRUD, JWT auth, and PDF report generation.
 
-🔗 Live Render Link: _Coming Soon_  
-👤 Developed by: **Shakshi**, MSc Data Science Student  
+## 🚀 Live Demo
 
----
+👉 [Click here to visit the deployed API on Render](https://hospital-management-api-m7j5.onrender.com)
 
-## 🚀 Overview
+📄 Swagger UI Docs: [https://hospital-management-api-m7j5.onrender.com/docs](https://hospital-management-api-m7j5.onrender.com/docs)
 
-This project simulates a real-world hospital management backend system. Admins can:
-- Add/Edit/Delete doctors
-- Add/Edit/Delete patients
-- Assign doctors to patients
-- Authenticate using OAuth2
+## 📂 Features
 
-> ⚠️ This is a backend-only application. Use `/docs` (Swagger UI) or Postman for testing endpoints.
-
----
+- User authentication with JWT
+- Patient registration & CRUD
+- Report generation (PDF)
+- PostgreSQL database
+- Deployed on Render
 
 ## 🛠️ Tech Stack
 
-- **FastAPI** – for building RESTful APIs
-- **SQLite** – as the database
-- **SQLAlchemy** – for ORM
-- **OAuth2.0 + JWT** – for secure admin authentication
-- **Uvicorn** – as ASGI server
+- FastAPI
+- PostgreSQL
+- SQLAlchemy
+- Jinja2
+- Uvicorn
 
----
-
-## 📦 Installation
+## ⚙️ Setup Locally
 
 ```bash
-# 1. Clone this repository
-git clone https://github.com/Shakshi123pal/Hospital_management__with_Report_Feature.git
-
-# 2. Navigate into the project folder
-cd hospital-management-fastapi
-
-# 3. Install dependencies
-pip install -r req.txt
-
-# 4. Run the app locally
+git clone https://github.com/Shakshi123pal/Hospital_management_with_Report_Feature.git
+cd Hospital_management_with_Report_Feature
+pip install -r requirements.txt
 uvicorn main:app --reload
