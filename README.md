@@ -6,15 +6,15 @@ A robust and scalable Hospital Management backend system built using **FastAPI**
 
 ---
 
-## 📌 Key Features
-
-- ✅ **User Authentication** – Secure login system using JWT tokens.
-- 🧑‍⚕️ **Patient Management** – Add, view, update, and delete patient records.
-- 📄 **Report Generation** – Generate and download patient reports in **PDF format**.
-- 🗃️ **Database Integration** – Uses **PostgreSQL** with SQLAlchemy ORM.
-- 🛡️ **Input Validation** – Powered by **Pydantic** for safe and reliable data handling.
-- 🌐 **RESTful API Endpoints** – Organized and scalable API structure.
-- ☁️ **Deployed on Render** – Accessible as a live backend API with public documentation.
+##  Key Features
+✅ JWT-based Authentication – Secure login and protected APIs.
+🧑‍⚕️ Doctor Management – Add, view, update, and delete doctor records.
+🧑‍⚕️ Patient Management – Add, view, update, and delete patients with room assignment.
+📄 Patient Report Generation – Generate and download patient reports in PDF format.
+🗃️ Database Integration – PostgreSQL with SQLAlchemy ORM.
+🛡️ Input Validation – Reliable request validation using Pydantic.
+🌐 RESTful REST APIs – Modular and scalable API architecture.
+☁️ Deployed on Render – Live backend API with Swagger documentation.
 
 ---
 
@@ -28,7 +28,6 @@ A robust and scalable Hospital Management backend system built using **FastAPI**
 | **Pydantic**    | Data validation and parsing     |
 | **Jinja2**      | For rendering dynamic PDF reports |
 | **Uvicorn**     | ASGI server for FastAPI         |
-| **Render**      | Cloud deployment platform       |
 
 ## ⚙️ Setup Locally
 
