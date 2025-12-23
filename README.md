@@ -2,11 +2,7 @@
 
 A robust and scalable Hospital Management backend system built using **FastAPI**. This project provides secure patient and user management with JWT-based authentication, PDF report generation, and RESTful APIs — suitable for integration into a complete hospital software system.
 
-🔗 **Live Demo (Render)**:  
-👉 [https://hospital-management-api-m7j5.onrender.com](https://hospital-management-api-m7j5.onrender.com)
 
-📘 **Interactive API Docs** (Swagger UI):  
-👉 [https://hospital-management-api-m7j5.onrender.com/docs](https://hospital-management-api-m7j5.onrender.com/docs)
 
 ---
 
